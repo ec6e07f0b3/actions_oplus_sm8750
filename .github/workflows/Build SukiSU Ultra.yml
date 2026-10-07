@@ -241,8 +241,8 @@ jobs:
           done
 
           if [ -z "$KSU_API_VERSION" ]; then
-            echo "❌ 错误：未能获取 KSU_API_VERSION" >&2
-            exit 1
+            KSU_API_VERSION="4.2.0"
+          echo "⚠️ 上游已去掉 Kbuild，使用默认 $KSU_API_VERSION"
           fi
 
           KSU_COMMIT_HASH=$(git ls-remote https://github.com/SukiSU-Ultra/SukiSU-Ultra.git refs/heads/builtin | cut -f1 | cut -c1-8)
