@@ -15,7 +15,7 @@ on:
         options:
           - "On"
           - "Off"
-        default: "Off"
+        default: "On"
       KPM:
         description: 🧩 是否启用KPM
         required: true
@@ -39,7 +39,7 @@ on:
         options:
           - "On"
           - "Off"
-        default: "Off"
+        default: "On"
       adios:
         description: '🔧 是否启用ADIOS IO调度器支持(提升IO读写性能)'
         required: true
@@ -55,7 +55,7 @@ on:
         options:
           - "On"
           - "Off"
-        default: "Off"
+        default: "On"
       proxy:
         description: 🌐 是否添加代理性能优化
         required: true
@@ -72,7 +72,7 @@ on:
         options:
           - "On"
           - "Off"
-        default: "Off"
+        default: "On"
       kernel_suffix:
         description: 📝 内核后缀(留空默认,开头别加连字符,勿加空格等影响指令运行的保留字符)
         required: false
